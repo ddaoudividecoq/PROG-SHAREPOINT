@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programmation des salles</title>
+<style>
+  :root{
+    --ink:#1b1b1f;
+    --muted:#5b5b66;
+    --line:#e6e6ea;
+    --surface:#ffffff;
+    --bg:#f6f7f9;
+    --blue:#1b5fc1;
+    --blue-ink:#0f3f8c;
+    --accor:#b8256f;
+    --adidas:#1f8a70;
+    --bataclan:#6d3bd1;
+    --radius:12px;
+    font-family:"Segoe UI","Segoe UI Web (West European)",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;color:var(--ink);background:var(--bg);line-height:1.4}
+
+  header.top{padding:28px 24px 8px}
+  header.top h1{margin:0;font-size:26px;font-weight:600;letter-spacing:-.01em}
+  header.top p{margin:6px 0 0;color:var(--muted);font-size:15px}
+
+  .bar{
+    position:sticky;top:0;z-index:5;background:var(--bg);
+    padding:14px 24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;
+    border-bottom:1px solid var(--line);
+  }
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{
+    border:1px solid var(--line);background:var(--surface);color:var(--ink);
+    padding:7px 14px;border-radius:999px;font-size:13.5px;cursor:pointer;
+    display:inline-flex;align-items:center;gap:7px;transition:background .12s,border-color .12s;
+  }
+  .chip:hover{border-color:#c7c7cf}
+  .chip[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+  .chip .dot{width:8px;height:8px;border-radius:50%}
+  .dot-accor{background:var(--accor)} .dot-adidas{background:var(--adidas)} .dot-bataclan{background:var(--bataclan)}
+
+  .seg{margin-left:auto;display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+  .seg button{border:0;background:transparent;color:var(--muted);padding:6px 14px;border-radius:999px;font-size:13.5px;cursor:pointer}
+  .seg button[aria-pressed="true"]{background:var(--blue);color:#fff}
+
+  main{padding:20px 24px 40px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:18px}
+
+  .card{
+    display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;
+    transition:box-shadow .15s ease,transform .15s ease;
+  }
+  .card:hover{box-shadow:0 8px 24px rgba(20,25,45,.12);transform:translateY(-2px)}
+  .card:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+
+  .thumb{position:relative;aspect-ratio:16/9;background:#d9d9e0 center/cover no-repeat}
+  .thumb--ph{display:flex;align-items:flex-end;padding:14px;color:#fff}
+  .thumb--ph .ph-title{font-weight:600;font-size:16px;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+  .datechip{
+    position:absolute;left:10px;bottom:10px;background:rgba(15,18,32,.82);color:#fff;
+    padding:5px 10px;border-radius:8px;font-size:12.5px;font-weight:600;backdrop-filter:blur(2px)
+  }
+  .past .thumb{filter:grayscale(.35) opacity(.9)}
+  .tag-past{
+    position:absolute;right:10px;top:10px;background:rgba(255,255,255,.92);color:#444;
+    font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px
+  }
+
+  .body{padding:13px 14px 16px;display:flex;flex-direction:column;gap:6px}
+  .venue{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted)}
+  .title{font-size:15.5px;font-weight:600;line-height:1.3}
+
+  .state{padding:60px 24px;text-align:center;color:var(--muted);font-size:15px}
+
+  @media (prefers-reduced-motion:reduce){.card{transition:none}}
+</style>
+</head>
+<body>
+  <header class="top">
+    <h1>Programmation des salles</h1>
+    <p>Les concerts à venir et passés de nos trois salles.</p>
+  </header>
+
+  <div class="bar">
+    <div class="chips" id="venueChips">
+      <button class="chip" data-venue="all" aria-pressed="true">Toutes</button>
+      <button class="chip" data-venue="Accor Arena" aria-pressed="false"><span class="dot dot-accor"></span>Accor Arena</button>
+      <button class="chip" data-venue="adidas arena" aria-pressed="false"><span class="dot dot-adidas"></span>adidas arena</button>
+      <button class="chip" data-venue="Bataclan" aria-pressed="false"><span class="dot dot-bataclan"></span>Bataclan</button>
+    </div>
+    <div class="seg" id="timeSeg">
+      <button data-time="upcoming" aria-pressed="false">À venir</button>
+      <button data-time="past" aria-pressed="false">Passés</button>
+      <button data-time="all" aria-pressed="true">Tous</button>
+    </div>
+  </div>
+
+  <main>
+    <div id="grid" class="grid"></div>
+    <div id="state" class="state">Chargement de la programmation…</div>
+  </main>
+
+<script>
+const VENUE_DOT = {"Accor Arena":"dot-accor","adidas arena":"dot-adidas","Bataclan":"dot-bataclan"};
+const VENUE_COLOR = {"Accor Arena":"#b8256f","adidas arena":"#1f8a70","Bataclan":"#6d3bd1"};
+
+let ALL = [];
+let venueFilter = "all";
+let timeFilter = "all";
+
+const fmtDate = iso => {
+  const d = new Date(iso);
+  const day = d.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+  const time = d.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
+  return `${day} · ${time}`;
+};
+
+function render(){
+  const now = Date.now();
+  let items = ALL.filter(e => e.date && e.title);
+
+  if(venueFilter !== "all") items = items.filter(e => e.venue === venueFilter);
+
+  const upcoming = items.filter(e => new Date(e.date).getTime() >= now)
+                        .sort((a,b)=> new Date(a.date) - new Date(b.date));
+  const past = items.filter(e => new Date(e.date).getTime() < now)
+                    .sort((a,b)=> new Date(b.date) - new Date(a.date));
+
+  let list;
+  if(timeFilter === "upcoming") list = upcoming;
+  else if(timeFilter === "past") list = past;
+  else list = upcoming.concat(past);
+
+  const grid = document.getElementById('grid');
+  const state = document.getElementById('state');
+  grid.innerHTML = "";
+
+  if(list.length === 0){
+    state.style.display = "block";
+    state.textContent = "Aucun concert à afficher pour cette sélection.";
+    return;
+  }
+  state.style.display = "none";
+
+  for(const e of list){
+    const isPast = new Date(e.date).getTime() < now;
+    const a = document.createElement('a');
+    a.className = "card" + (isPast ? " past" : "");
+    a.href = e.link || "#";
+    a.target = "_blank";
+    a.rel = "noopener";
+
+    let thumb;
+    if(e.image){
+      thumb = `<div class="thumb" style="background-image:url('${e.image}')">
+                 <span class="datechip">${fmtDate(e.date)}</span>
+                 ${isPast ? '<span class="tag-past">Terminé</span>' : ''}
+               </div>`;
+    } else {
+      const c = VENUE_COLOR[e.venue] || "#3a3a48";
+      thumb = `<div class="thumb thumb--ph" style="background:linear-gradient(135deg,${c},#20222e)">
+                 <span class="ph-title">${e.title}</span>
+                 <span class="datechip">${fmtDate(e.date)}</span>
+                 ${isPast ? '<span class="tag-past">Terminé</span>' : ''}
+               </div>`;
+    }
+
+    const dot = VENUE_DOT[e.venue] || "";
+    a.innerHTML = `${thumb}
+      <div class="body">
+        <span class="venue"><span class="dot ${dot}"></span>${e.venue}</span>
+        <span class="title">${e.title}</span>
+      </div>`;
+    grid.appendChild(a);
+  }
+}
+
+function wire(){
+  document.getElementById('venueChips').addEventListener('click', ev => {
+    const b = ev.target.closest('.chip'); if(!b) return;
+    venueFilter = b.dataset.venue;
+    document.querySelectorAll('#venueChips .chip').forEach(c =>
+      c.setAttribute('aria-pressed', c === b));
+    render();
+  });
+  document.getElementById('timeSeg').addEventListener('click', ev => {
+    const b = ev.target.closest('button'); if(!b) return;
+    timeFilter = b.dataset.time;
+    document.querySelectorAll('#timeSeg button').forEach(c =>
+      c.setAttribute('aria-pressed', c === b));
+    render();
+  });
+}
+
+fetch('events.json', {cache:'no-store'})
+  .then(r => { if(!r.ok) throw new Error(); return r.json(); })
+  .then(data => { ALL = data; wire(); render(); })
+  .catch(() => {
+    document.getElementById('state').textContent =
+      "La programmation n'a pas pu être chargée. Elle apparaîtra après la première synchronisation.";
+  });
+</script>
+</body>
+</html>
