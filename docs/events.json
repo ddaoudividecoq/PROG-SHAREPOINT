@@ -37,7 +37,8 @@
     "date": "2026-09-15T17:00:00+00:00",
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-07/photo_00_1080-1080.jpg",
-    "link": "https://billetterie.bataclan.fr/fr/manifestation/786/sport_yoga_metal_pass_1_seance"
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/786/sport_yoga_metal_pass_1_seance",
+    "dateEnd": "2026-09-15T18:00:00+00:00"
   },
   {
     "id": "bataclan-683",
@@ -136,6 +137,14 @@
     "link": "https://www.accorarena.com"
   },
   {
+    "id": "adidasarena-2692",
+    "title": "PARIS BASKETBALL vs PARTIZAN BELGRADE",
+    "date": "2026-09-29T20:45:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/d5b23424-f26b-4f7f-8324-34c58fd37a76.jpg",
+    "link": "https://www.adidas-arena.com"
+  },
+  {
     "id": "accorarena-2374",
     "title": "A$AP Rocky - Don't Be Dumb World Tour",
     "date": "2026-09-30T20:00:00.000Z",
@@ -144,9 +153,17 @@
     "link": "https://www.accorarena.com"
   },
   {
+    "id": "adidasarena-2693",
+    "title": "PARIS BASKETBALL vs ZALGIRIS",
+    "date": "2026-10-01T20:45:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/1330bd23-9080-45de-b2dd-87d3ffa09a9b.jpg",
+    "link": "https://www.adidas-arena.com"
+  },
+  {
     "id": "bataclan-626",
     "title": "ME GUSTAS TU + SIDI WACHO + FLAGRANTS DELIRES",
-    "date": "2026-10-02T17:00:00+00:00",
+    "date": "2026-10-02T16:00:00+00:00",
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-07/1080-x-1080-sans-date.jpg",
     "link": "https://billetterie.bataclan.fr/fr/manifestation/626/flagrants_delires_me_gustas_tu"
@@ -200,6 +217,14 @@
     "link": "https://www.adidas-arena.com"
   },
   {
+    "id": "adidasarena-2694",
+    "title": "PARIS BASKETBALL vs ASVEL",
+    "date": "2026-10-07T20:45:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/756faaa2-9605-4a08-a22d-2135a210fe57.jpg",
+    "link": "https://www.adidas-arena.com"
+  },
+  {
     "id": "bataclan-697",
     "title": "GAVIN DEGRAW",
     "date": "2026-10-09T17:30:00+00:00",
@@ -221,6 +246,14 @@
     "date": "2026-10-10T20:00:00.000Z",
     "venue": "adidas arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/2b978d07-6d23-4a2b-a922-d837eb5e3b8f.jpg",
+    "link": "https://www.adidas-arena.com"
+  },
+  {
+    "id": "adidasarena-2695",
+    "title": "PARIS BASKETBALL vs STRASBOURG",
+    "date": "2026-10-11T16:30:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/c77ac849-26d3-4aba-8d26-a4b97409c71d.jpg",
     "link": "https://www.adidas-arena.com"
   },
   {
@@ -246,6 +279,14 @@
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2025-12/autechre-bataclan-2026-square_0.jpg",
     "link": "https://billetterie.bataclan.fr/fr/manifestation/593/autechre"
+  },
+  {
+    "id": "adidasarena-2696",
+    "title": "PARIS BASKETBALL vs VIRTUS BOLOGNE",
+    "date": "2026-10-14T20:45:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/df9083ca-2a02-495c-9a11-fca429123e84.jpg",
+    "link": "https://www.adidas-arena.com"
   },
   {
     "id": "bataclan-767",
@@ -286,6 +327,14 @@
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/e3a552ce-3aca-47f7-ab87-768cdde4bdcb.jpg",
     "link": "https://www.accorarena.com"
+  },
+  {
+    "id": "adidasarena-2697",
+    "title": "PARIS BASKETBALL vs BOULAZAC",
+    "date": "2026-10-18T16:30:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/d48c3416-aa86-4487-8e08-641154a1353f.jpg",
+    "link": "https://www.adidas-arena.com"
   },
   {
     "id": "accorarena-2407",
@@ -352,6 +401,14 @@
     "link": "https://www.accorarena.com"
   },
   {
+    "id": "adidasarena-2698",
+    "title": "PARIS BASKETBALL vs VALENCE",
+    "date": "2026-10-23T20:45:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/1f63fa8e-3c6e-45f1-ae93-15f2afb6525d.jpg",
+    "link": "https://www.adidas-arena.com"
+  },
+  {
     "id": "accorarena-2570",
     "title": "ASAKE: IN GOD WE TRUST WORLD TOUR",
     "date": "2026-10-24T20:00:00.000Z",
@@ -381,7 +438,8 @@
     "date": "2026-10-26T19:00:00+00:00",
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-04/fredz26-1080.jpg",
-    "link": "https://billetterie.bataclan.fr/fr/manifestation/631/fredz"
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/631/fredz",
+    "dateEnd": "2026-10-27T19:00:00+00:00"
   },
   {
     "id": "accorarena-2397",
@@ -421,7 +479,8 @@
     "date": "2026-10-29T19:00:00+00:00",
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-01/1080x1080peb.jpg",
-    "link": "https://billetterie.bataclan.fr/fr/manifestation/637/pierre_emmanuel_barre"
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/637/pierre_emmanuel_barre",
+    "dateEnd": "2026-10-31T19:00:00+00:00"
   },
   {
     "id": "adidasarena-1841",
@@ -525,7 +584,8 @@
     "date": "2026-11-08T19:00:00+00:00",
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-02/1080_kidlaroi.jpg",
-    "link": "https://billetterie.bataclan.fr/fr/manifestation/679/the_kid_laroi"
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/679/the_kid_laroi",
+    "dateEnd": "2026-11-09T19:00:00+00:00"
   },
   {
     "id": "adidasarena-2507",
@@ -542,6 +602,14 @@
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2025-06/milano_1080.jpg",
     "link": "https://billetterie.bataclan.fr/fr/manifestation/433/milano"
+  },
+  {
+    "id": "accorarena-2700",
+    "title": "PARIS BASKETBALL vs FENERBAHCE ISTANBUL",
+    "date": "2026-11-11T20:45:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/85e195da-6e74-466c-bc33-4e2f97e78a18.jpg",
+    "link": "https://www.accorarena.com"
   },
   {
     "id": "bataclan-709",
@@ -708,7 +776,7 @@
     "title": "ONEUS",
     "date": "2026-11-21T19:00:00+00:00",
     "venue": "Bataclan",
-    "image": "",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-09/1080x1080_3.jpg",
     "link": "https://billetterie.bataclan.fr/fr/manifestation/805/oneus"
   },
   {
@@ -1496,6 +1564,14 @@
     "link": "https://www.adidas-arena.com"
   },
   {
+    "id": "accorarena-2691",
+    "title": "CHARLI XCX",
+    "date": "2027-02-24T19:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/e5ac4de2-478e-42c0-88e7-96b32a916b04.jpg",
+    "link": "https://www.accorarena.com"
+  },
+  {
     "id": "adidasarena-2599",
     "title": "THE AUSTRALIAN PINK FLOYD SHOW",
     "date": "2027-02-26T20:00:00.000Z",
@@ -1648,6 +1724,14 @@
     "link": "https://www.adidas-arena.com"
   },
   {
+    "id": "bataclan-807",
+    "title": "BARTH",
+    "date": "2027-04-03T18:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "",
+    "link": "https://billetterie.bataclan.fr/fr/meeting/891/barth"
+  },
+  {
     "id": "accorarena-2581",
     "title": "Gracie Abrams: The Look at My Life Tour",
     "date": "2027-04-08T20:00:00.000Z",
@@ -1693,6 +1777,14 @@
     "date": "2027-04-12T20:00:00.000Z",
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/406dc0ee-5114-4c00-828c-ff81679e4659.jpg",
+    "link": "https://www.accorarena.com"
+  },
+  {
+    "id": "accorarena-2653",
+    "title": "CALEMA",
+    "date": "2027-04-25T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/7a69ac73-38f2-474e-820a-6e0880a976b7.jpg",
     "link": "https://www.accorarena.com"
   },
   {
