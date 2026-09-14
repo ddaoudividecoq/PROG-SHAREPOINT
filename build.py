@@ -23,7 +23,7 @@ BATACLAN_URL = "https://billetterie.bataclan.fr/fr/hubber/catalog/resource/ticke
 
 # --- Lien "au clic" pour les salles Groupe PEC (leur JSON n'a pas de lien par evenement) ---
 # >>> A CONFIRMER : remplace par la vraie page programmation de chaque salle.
-ACCOR_LINK  = "https://www.accorarena.com"
+ACCOR_LINK  = "https://www.accorarena.com/fr/programmation"
 ADIDAS_LINK = "https://www.adidasarena.com/programmation"
 
 OUT = "docs/events.json"
