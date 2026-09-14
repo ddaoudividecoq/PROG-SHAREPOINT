@@ -57,16 +57,21 @@ def fetch_bataclan(url, auth):
         if not e.get("published", False):
             continue
         ts = e.get("date")
+        ts_end = e.get("date_end")
         date_iso = (dt.datetime.fromtimestamp(ts, dt.timezone.utc).isoformat()
                     if ts else None)
-        out.append({
+        ev = {
             "id": f"bataclan-{e['id']}",
             "title": (e.get("title") or "").strip(),
             "date": date_iso,
             "venue": "Bataclan",
             "image": e.get("visuel") or "",
             "link": e.get("url") or "",
-        })
+        }
+        # date de fin si le show s'etale sur plusieurs jours
+        if ts_end and ts_end != ts:
+            ev["dateEnd"] = dt.datetime.fromtimestamp(ts_end, dt.timezone.utc).isoformat()
+        out.append(ev)
     return out
 
 
