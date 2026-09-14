@@ -2,11 +2,14 @@
 """
 Recupere les concerts des 3 salles et ecrit docs/events.json.
 
-Conserve l'historique : les evenements deja presents dans events.json
-ne sont jamais supprimes, meme si l'API ne les renvoie plus (shows passes).
+- Conserve l'historique : les evenements deja presents ne sont jamais supprimes.
+- Illustre automatiquement les evenements sans visuel :
+  API -> recherche Deezer (photo artiste, sans cle) -> vignette de repli.
+- Chaque image trouvee est memorisee dans events.json (cherchee une seule fois).
 """
 
 import os
+import re
 import json
 import datetime as dt
 import requests
@@ -23,10 +26,45 @@ BATACLAN_URL = "https://billetterie.bataclan.fr/fr/hubber/catalog/resource/ticke
 
 # --- Lien "au clic" pour les salles Groupe PEC (leur JSON n'a pas de lien par evenement) ---
 # >>> A CONFIRMER : remplace par la vraie page programmation de chaque salle.
-ACCOR_LINK  = "https://www.accorarena.com/fr/programmation"
-ADIDAS_LINK = "https://www.adidasarena.com/programmation"
+ACCOR_LINK  = "https://www.accorarena.com"
+ADIDAS_LINK = "https://www.adidas-arena.com"
 
 OUT = "docs/events.json"
+
+
+def norm(s):
+    return re.sub(r"\s+", " ", (s or "").strip().lower())
+
+
+def clean_query(title):
+    """Isole le nom de l'artiste : on coupe apres un separateur de sous-titre."""
+    t = title or ""
+    for sep in [" - ", " \u2013 ", " \u2014 ", " | ", " : "]:
+        if sep in t:
+            t = t.split(sep)[0]
+    return t.strip()
+
+
+def lookup_image(title):
+    """Cherche la photo de l'artiste sur l'API publique Deezer (sans cle)."""
+    q = clean_query(title)
+    if not q:
+        return ""
+    try:
+        r = requests.get("https://api.deezer.com/search/artist",
+                         params={"q": q, "limit": 1}, timeout=15)
+        r.raise_for_status()
+        data = r.json().get("data", [])
+        if not data:
+            return ""
+        art = data[0]
+        name = art.get("name", "")
+        # garde-fou anti faux-positif : le nom trouve doit recouper le titre
+        if norm(name) and (norm(name) in norm(q) or norm(q) in norm(name)):
+            return art.get("picture_xl") or art.get("picture_big") or ""
+    except Exception:
+        pass
+    return ""
 
 
 def fetch_groupe_pec(url, api_key, salle, lien):
@@ -83,23 +121,34 @@ def load_history():
 
 
 def main():
-    events = load_history()          # historique existant (shows passes conserves)
+    history = load_history()          # historique existant (shows passes conserves)
 
     fresh = []
     fresh += fetch_groupe_pec(ACCOR_URL, ACCOR_API_KEY, "Accor Arena", ACCOR_LINK)
     fresh += fetch_groupe_pec(ADIDAS_URL, ADIDAS_API_KEY, "adidas arena", ADIDAS_LINK)
     fresh += fetch_bataclan(BATACLAN_URL, BATACLAN_AUTH)
 
-    for e in fresh:                  # ajoute les nouveaux, met a jour les existants
-        if e.get("date") and e.get("title"):
-            events[e["id"]] = e
+    found = 0
+    for e in fresh:
+        if not (e.get("date") and e.get("title")):
+            continue
+        if not e["image"]:
+            prev = history.get(e["id"])
+            if prev and prev.get("image"):
+                e["image"] = prev["image"]        # image deja connue : on la garde
+            else:
+                e["image"] = lookup_image(e["title"])   # recherche auto (Deezer)
+                if e["image"]:
+                    found += 1
+        history[e["id"]] = e                        # ajoute / met a jour
 
-    result = sorted(events.values(), key=lambda e: e["date"] or "")
+    result = sorted(history.values(), key=lambda e: e.get("date") or "")
     os.makedirs("docs", exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    print(f"{len(fresh)} evenements recuperes, {len(result)} au total dans {OUT}.")
+    print(f"{len(fresh)} evenements recuperes, {len(result)} au total, "
+          f"{found} image(s) trouvee(s) automatiquement -> {OUT}.")
 
 
 if __name__ == "__main__":
