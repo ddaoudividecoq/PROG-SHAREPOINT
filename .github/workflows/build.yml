@@ -2,7 +2,7 @@ name: Mise a jour programmation
 
 on:
   schedule:
-    - cron: '0 6 * * 1'      # tous les lundis a 6h00 UTC
+  - cron: '0 6 * * *'      # tous les jours a 6h00 UTC
   workflow_dispatch:          # bouton de lancement manuel
 
 permissions:
