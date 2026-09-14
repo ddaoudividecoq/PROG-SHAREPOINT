@@ -12,7 +12,6 @@
     --surface:#ffffff;
     --bg:#f6f7f9;
     --blue:#1b5fc1;
-    --blue-ink:#0f3f8c;
     --accor:#b8256f;
     --adidas:#1f8a70;
     --bataclan:#6d3bd1;
@@ -112,23 +111,76 @@ let ALL = [];
 let venueFilter = "all";
 let timeFilter = "all";
 
-const fmtDate = iso => {
-  const d = new Date(iso);
-  const day = d.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
-  const time = d.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
-  return `${day} · ${time}`;
-};
+const norm = t => (t || "").trim().toLowerCase().replace(/\s+/g, " ");
+
+// Regroupe les seances consecutives de meme titre dans une meme salle.
+// Des qu'un autre evenement s'intercale (dans l'ordre chronologique de la salle),
+// une nouvelle serie commence. Chaque serie = une vignette.
+function buildGroups(events){
+  const byVenue = {};
+  for(const e of events){
+    if(!e.date || !e.title) continue;
+    (byVenue[e.venue] = byVenue[e.venue] || []).push(e);
+  }
+  const runs = [];
+  for(const venue in byVenue){
+    const list = byVenue[venue].sort((a,b)=> new Date(a.date) - new Date(b.date));
+    let run = null;
+    for(const e of list){
+      if(run && norm(e.title) === run.key){
+        run.items.push(e);
+      } else {
+        if(run) runs.push(run);
+        run = {venue, key: norm(e.title), items:[e]};
+      }
+    }
+    if(run) runs.push(run);
+  }
+  return runs.map(run => {
+    const first = run.items[0];
+    let end = first.dateEnd || first.date;
+    for(const it of run.items){
+      const cand = it.dateEnd || it.date;
+      if(new Date(cand) > new Date(end)) end = cand;
+    }
+    return {
+      title: first.title,
+      venue: run.venue,
+      image: first.image,
+      link: first.link,
+      start: first.date,
+      end: end,
+    };
+  });
+}
+
+// Affiche une date simple (avec heure) ou une plage "du ... au ...".
+function fmtWhen(startISO, endISO){
+  const s = new Date(startISO), e = new Date(endISO);
+  if(s.toDateString() === e.toDateString()){
+    const day = s.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+    const time = s.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
+    return day + ' · ' + time;
+  }
+  const sameMonth = s.getMonth() === e.getMonth() && s.getFullYear() === e.getFullYear();
+  const sameYear = s.getFullYear() === e.getFullYear();
+  const d1 = sameMonth
+      ? String(s.getDate())
+      : s.toLocaleDateString('fr-FR', sameYear ? {day:'numeric',month:'short'} : {day:'numeric',month:'short',year:'numeric'});
+  const d2 = e.toLocaleDateString('fr-FR',{day:'numeric',month:'short',year:'numeric'});
+  return 'du ' + d1 + ' au ' + d2;
+}
 
 function render(){
   const now = Date.now();
-  let items = ALL.filter(e => e.date && e.title);
+  let groups = buildGroups(ALL);
 
-  if(venueFilter !== "all") items = items.filter(e => e.venue === venueFilter);
+  if(venueFilter !== "all") groups = groups.filter(g => g.venue === venueFilter);
 
-  const upcoming = items.filter(e => new Date(e.date).getTime() >= now)
-                        .sort((a,b)=> new Date(a.date) - new Date(b.date));
-  const past = items.filter(e => new Date(e.date).getTime() < now)
-                    .sort((a,b)=> new Date(b.date) - new Date(a.date));
+  const upcoming = groups.filter(g => new Date(g.end).getTime() >= now)
+                         .sort((a,b)=> new Date(a.start) - new Date(b.start));
+  const past = groups.filter(g => new Date(g.end).getTime() < now)
+                     .sort((a,b)=> new Date(b.end) - new Date(a.end));
 
   let list;
   if(timeFilter === "upcoming") list = upcoming;
@@ -146,35 +198,36 @@ function render(){
   }
   state.style.display = "none";
 
-  for(const e of list){
-    const isPast = new Date(e.date).getTime() < now;
+  for(const g of list){
+    const isPast = new Date(g.end).getTime() < now;
+    const when = fmtWhen(g.start, g.end);
     const a = document.createElement('a');
     a.className = "card" + (isPast ? " past" : "");
-    a.href = e.link || "#";
+    a.href = g.link || "#";
     a.target = "_blank";
     a.rel = "noopener";
 
     let thumb;
-    if(e.image){
-      thumb = `<div class="thumb" style="background-image:url('${e.image}')">
-                 <span class="datechip">${fmtDate(e.date)}</span>
-                 ${isPast ? '<span class="tag-past">Terminé</span>' : ''}
-               </div>`;
+    if(g.image){
+      thumb = '<div class="thumb" style="background-image:url(\'' + g.image + '\')">' +
+                '<span class="datechip">' + when + '</span>' +
+                (isPast ? '<span class="tag-past">Terminé</span>' : '') +
+              '</div>';
     } else {
-      const c = VENUE_COLOR[e.venue] || "#3a3a48";
-      thumb = `<div class="thumb thumb--ph" style="background:linear-gradient(135deg,${c},#20222e)">
-                 <span class="ph-title">${e.title}</span>
-                 <span class="datechip">${fmtDate(e.date)}</span>
-                 ${isPast ? '<span class="tag-past">Terminé</span>' : ''}
-               </div>`;
+      const c = VENUE_COLOR[g.venue] || "#3a3a48";
+      thumb = '<div class="thumb thumb--ph" style="background:linear-gradient(135deg,' + c + ',#20222e)">' +
+                '<span class="ph-title">' + g.title + '</span>' +
+                '<span class="datechip">' + when + '</span>' +
+                (isPast ? '<span class="tag-past">Terminé</span>' : '') +
+              '</div>';
     }
 
-    const dot = VENUE_DOT[e.venue] || "";
-    a.innerHTML = `${thumb}
-      <div class="body">
-        <span class="venue"><span class="dot ${dot}"></span>${e.venue}</span>
-        <span class="title">${e.title}</span>
-      </div>`;
+    const dot = VENUE_DOT[g.venue] || "";
+    a.innerHTML = thumb +
+      '<div class="body">' +
+        '<span class="venue"><span class="dot ' + dot + '"></span>' + g.venue + '</span>' +
+        '<span class="title">' + g.title + '</span>' +
+      '</div>';
     grid.appendChild(a);
   }
 }
