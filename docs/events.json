@@ -507,6 +507,14 @@
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
+    "id": "adidasarena-2702",
+    "title": "PARIS BASKETBALL vs CHALON",
+    "date": "2026-11-01T20:45:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/7c5c8fee-a9c3-4682-9ba6-030ea4a2aed2.jpg",
+    "link": "https://www.adidasarena.com/programmation"
+  },
+  {
     "id": "adidasarena-2631",
     "title": "NCAA Women’s Basketball",
     "date": "2026-11-02T18:00:00.000Z",
@@ -586,6 +594,14 @@
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-02/1080_kidlaroi.jpg",
     "link": "https://billetterie.bataclan.fr/fr/manifestation/679/the_kid_laroi",
     "dateEnd": "2026-11-09T19:00:00+00:00"
+  },
+  {
+    "id": "adidasarena-2703",
+    "title": "PARIS BASKETBALL vs BOURG",
+    "date": "2026-11-08T20:45:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/52286859-f82e-4b28-8b83-048a88181c42.jpg",
+    "link": "https://www.adidasarena.com/programmation"
   },
   {
     "id": "adidasarena-2507",
@@ -732,6 +748,14 @@
     "link": "https://www.adidasarena.com/programmation"
   },
   {
+    "id": "adidasarena-2704",
+    "title": "PARIS BASKETBALL vs HAPOËL TEL AVIV",
+    "date": "2026-11-18T20:45:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/6b6e2543-b1bf-4eb3-b5c2-3c87872bcf3f.jpg",
+    "link": "https://www.adidasarena.com/programmation"
+  },
+  {
     "id": "accorarena-2218",
     "title": "Christophe Maé",
     "date": "2026-11-19T20:00:00.000Z",
@@ -802,6 +826,14 @@
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/f0ca3f4e-730a-435d-9ac9-204622cdd7be.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "adidasarena-2705",
+    "title": "PARIS BASKETBALL vs GRAVELINES",
+    "date": "2026-11-22T20:45:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/08804acd-7b37-45b7-aecb-eec0635cf02a.jpg",
+    "link": "https://www.adidasarena.com/programmation"
   },
   {
     "id": "accorarena-1810",
@@ -1038,7 +1070,7 @@
   {
     "id": "bataclan-808",
     "title": "LES FOUDRES",
-    "date": "2026-12-10T17:30:00+00:00",
+    "date": "2026-12-10T17:00:00+00:00",
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-09/1080x1080_4.jpg",
     "link": "https://billetterie.bataclan.fr/fr/manifestation/808/les_foudres"
@@ -1588,6 +1620,14 @@
     "link": "https://www.adidasarena.com/programmation"
   },
   {
+    "id": "bataclan-811",
+    "title": "HOT CHIP",
+    "date": "2027-03-02T19:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://cdn-images.dzcdn.net/images/artist/365ecf76f79504caa65fe1e27df7a152/1000x1000-000000-80-0-0.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/meeting/895/hot_chip"
+  },
+  {
     "id": "adidasarena-2362",
     "title": "MARINE LEONARDI",
     "date": "2027-03-05T20:00:00.000Z",
@@ -1746,6 +1786,14 @@
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/406dc0ee-5114-4c00-828c-ff81679e4659.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "bataclan-810",
+    "title": "DRAGONFORCE",
+    "date": "2027-04-09T17:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-09/1080x1080_5.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/810/dragonforce"
   },
   {
     "id": "accorarena-2582",
