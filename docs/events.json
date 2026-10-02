@@ -1716,6 +1716,14 @@
     "link": "https://www.adidasarena.com/programmation"
   },
   {
+    "id": "accorarena-2725",
+    "title": "ANGÈLE",
+    "date": "2027-03-13T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/a1982d45-425b-46b5-b839-cb11b73a0909.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
     "id": "bataclan-721",
     "title": "AYRON JONES",
     "date": "2027-03-16T19:00:00+00:00",
@@ -2002,6 +2010,14 @@
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/48ca646c-8c40-4ea5-8fe2-88cd57c700b9.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "adidasarena-2701",
+    "title": "ARCHIVE",
+    "date": "2027-09-25T20:00:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/6c9c09f0-d39a-4308-9442-45d52b1f03ca.jpg",
+    "link": "https://www.adidasarena.com/programmation"
   },
   {
     "id": "accorarena-1842",
