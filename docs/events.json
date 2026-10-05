@@ -1420,6 +1420,14 @@
     "link": "https://www.adidasarena.com/programmation"
   },
   {
+    "id": "bataclan-819",
+    "title": "LES LEGENDES ARABES",
+    "date": "2027-01-16T19:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "",
+    "link": "https://billetterie.bataclan.fr/fr/meeting/903/les_legendes_arabes"
+  },
+  {
     "id": "adidasarena-2542",
     "title": "DISNEY SUR GLACE - LE VOYAGE ENCHANTE",
     "date": "2027-01-17T14:00:00.000Z",
@@ -1524,12 +1532,36 @@
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
+    "id": "accorarena-2719",
+    "title": "PARIS GRAND SLAM 2027",
+    "date": "2027-02-05T09:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/f0ce967f-f797-4a4a-ad3a-f23d1c7b33cf.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
     "id": "adidasarena-2579",
     "title": "ARES Février Paris - MMA",
     "date": "2027-02-05T19:30:00.000Z",
     "venue": "adidas arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/402c043d-7856-4fb5-b479-eadf5b2b305a.jpg",
     "link": "https://www.adidasarena.com/programmation"
+  },
+  {
+    "id": "accorarena-2720",
+    "title": "PARIS GRAND SLAM 2027",
+    "date": "2027-02-06T09:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/f0ce967f-f797-4a4a-ad3a-f23d1c7b33cf.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "accorarena-2721",
+    "title": "PARIS GRAND SLAM 2027",
+    "date": "2027-02-07T09:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/f0ce967f-f797-4a4a-ad3a-f23d1c7b33cf.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
   },
   {
     "id": "accorarena-2603",
@@ -1554,6 +1586,14 @@
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/b7aa02ec-2bf1-4411-8883-742fd3e9b649.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "bataclan-814",
+    "title": "EVNNE",
+    "date": "2027-02-14T18:30:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-10/1080-x-1080-sans-texte.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/814/evnne"
   },
   {
     "id": "accorarena-2574",
@@ -1900,6 +1940,14 @@
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
+    "id": "bataclan-817",
+    "title": "ORBITAL",
+    "date": "2027-04-30T18:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://cdn-images.dzcdn.net/images/artist/6fd210d9281087db0e6676e43d9be0e4/1000x1000-000000-80-0-0.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/meeting/901/orbital"
+  },
+  {
     "id": "accorarena-2571",
     "title": "LA MANO 1.9",
     "date": "2027-05-07T20:00:00.000Z",
@@ -1922,6 +1970,14 @@
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/b3375ea6-0a42-49ee-9aa3-2c140fe13c4a.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "adidasarena-2724",
+    "title": "Greta Van Fleet - Into The Beginning",
+    "date": "2027-05-27T20:00:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/1d06cbed-03bc-40dc-9ed5-7b47eac36ce4.jpg",
+    "link": "https://www.adidasarena.com/programmation"
   },
   {
     "id": "accorarena-2377",
