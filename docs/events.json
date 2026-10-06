@@ -1424,8 +1424,8 @@
     "title": "LES LEGENDES ARABES",
     "date": "2027-01-16T19:00:00+00:00",
     "venue": "Bataclan",
-    "image": "",
-    "link": "https://billetterie.bataclan.fr/fr/meeting/903/les_legendes_arabes"
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-10/photo-1080x1080.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/819/les_legendes_arabes"
   },
   {
     "id": "adidasarena-2542",
@@ -1498,6 +1498,14 @@
     "venue": "adidas arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/1d06cbed-03bc-40dc-9ed5-7b47eac36ce4.jpg",
     "link": "https://www.adidasarena.com/programmation"
+  },
+  {
+    "id": "bataclan-821",
+    "title": "DEAD POET SOCIETY",
+    "date": "2027-01-26T19:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-10/1080-x-1080.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/821/dead_poet_society"
   },
   {
     "id": "adidasarena-2457",
@@ -1945,7 +1953,7 @@
     "date": "2027-04-30T18:00:00+00:00",
     "venue": "Bataclan",
     "image": "https://cdn-images.dzcdn.net/images/artist/6fd210d9281087db0e6676e43d9be0e4/1000x1000-000000-80-0-0.jpg",
-    "link": "https://billetterie.bataclan.fr/fr/meeting/901/orbital"
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/817/orbital"
   },
   {
     "id": "accorarena-2571",
