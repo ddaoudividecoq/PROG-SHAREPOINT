@@ -764,20 +764,20 @@
     "link": "https://www.adidasarena.com/programmation"
   },
   {
-    "id": "adidasarena-2704",
-    "title": "PARIS BASKETBALL vs HAPOËL TEL AVIV",
-    "date": "2026-11-18T20:45:00.000Z",
-    "venue": "adidas arena",
-    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/6b6e2543-b1bf-4eb3-b5c2-3c87872bcf3f.jpg",
-    "link": "https://www.adidasarena.com/programmation"
-  },
-  {
     "id": "accorarena-2218",
     "title": "Christophe Maé",
     "date": "2026-11-19T20:00:00.000Z",
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/b107ba6c-337e-4046-915c-de238ea84d49.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "adidasarena-2704",
+    "title": "PARIS BASKETBALL vs HAPOËL TEL AVIV",
+    "date": "2026-11-19T20:45:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/6b6e2543-b1bf-4eb3-b5c2-3c87872bcf3f.jpg",
+    "link": "https://www.adidasarena.com/programmation"
   },
   {
     "id": "bataclan-690",
