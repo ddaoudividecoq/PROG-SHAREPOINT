@@ -1924,6 +1924,22 @@
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
+    "id": "bataclan-822",
+    "title": "NINAJIRACHI",
+    "date": "2027-04-17T17:30:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://cdn-images.dzcdn.net/images/artist/c4dc2676b8b1aa0c679d614deb66bcdf/1000x1000-000000-80-0-0.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/product/996/bataclan/ninajirachi"
+  },
+  {
+    "id": "accorarena-2715",
+    "title": "GUY2BEZBAR",
+    "date": "2027-04-17T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/710846dd-e84e-422d-b10a-66c0820c87b7.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
     "id": "accorarena-2653",
     "title": "CALEMA",
     "date": "2027-04-25T20:00:00.000Z",
@@ -2106,6 +2122,14 @@
     "venue": "adidas arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/f03d5e38-f052-47c0-8aa3-5672a1d9cf9a.jpg",
     "link": "https://www.adidasarena.com/programmation"
+  },
+  {
+    "id": "accorarena-2723",
+    "title": "EDDY DE PRETTO",
+    "date": "2027-11-02T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/f68dfefe-47f0-4bc3-8aac-2b0829161268.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
   },
   {
     "id": "accorarena-2129",
