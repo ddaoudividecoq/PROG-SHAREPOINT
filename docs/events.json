@@ -1788,6 +1788,14 @@
     "link": "https://billetterie.bataclan.fr/fr/manifestation/782/squeeze"
   },
   {
+    "id": "bataclan-824",
+    "title": "DUMAN",
+    "date": "2027-03-19T19:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://cdn-images.dzcdn.net/images/artist/420bd789cacec4d562f981f6eae6c76e/1000x1000-000000-80-0-0.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/product/998/bataclan/duman"
+  },
+  {
     "id": "bataclan-787",
     "title": "WEB",
     "date": "2027-03-20T18:30:00+00:00",
