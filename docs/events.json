@@ -65,14 +65,6 @@
     "link": "https://billetterie.bataclan.fr/fr/manifestation/754/osamason"
   },
   {
-    "id": "accorarena-2524",
-    "title": "SIDIKI DIABATE",
-    "date": "2026-09-18T20:00:00.000Z",
-    "venue": "Accor Arena",
-    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/7450c78d-9620-4ee7-adaa-bbef1794653d.jpg",
-    "link": "https://www.accorarena.com/fr/programmation"
-  },
-  {
     "id": "bataclan-687",
     "title": "RAWAYANA",
     "date": "2026-09-19T18:00:00+00:00",
@@ -545,6 +537,14 @@
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-04/eve-press-1080.jpg",
     "link": "https://billetterie.bataclan.fr/fr/manifestation/730/eve"
+  },
+  {
+    "id": "accorarena-2524",
+    "title": "SIDIKI DIABATE",
+    "date": "2026-11-04T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/7450c78d-9620-4ee7-adaa-bbef1794653d.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
   },
   {
     "id": "bataclan-795",
@@ -1976,7 +1976,7 @@
     "title": "ORBITAL",
     "date": "2027-04-30T18:00:00+00:00",
     "venue": "Bataclan",
-    "image": "https://cdn-images.dzcdn.net/images/artist/6fd210d9281087db0e6676e43d9be0e4/1000x1000-000000-80-0-0.jpg",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-10/1080x1080.jpg",
     "link": "https://billetterie.bataclan.fr/fr/manifestation/817/orbital"
   },
   {
