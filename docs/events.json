@@ -1692,12 +1692,20 @@
     "link": "https://www.adidasarena.com/programmation"
   },
   {
+    "id": "accorarena-2739",
+    "title": "KENSHI YONEZU",
+    "date": "2027-02-26T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/612d2004-b674-4a51-a858-c8d0c991805c.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
     "id": "bataclan-811",
     "title": "HOT CHIP",
     "date": "2027-03-02T19:00:00+00:00",
     "venue": "Bataclan",
-    "image": "https://cdn-images.dzcdn.net/images/artist/365ecf76f79504caa65fe1e27df7a152/1000x1000-000000-80-0-0.jpg",
-    "link": "https://billetterie.bataclan.fr/fr/meeting/895/hot_chip"
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-10/1080x1080_1.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/811/hot_chip"
   },
   {
     "id": "adidasarena-2362",
@@ -1792,8 +1800,8 @@
     "title": "DUMAN",
     "date": "2027-03-19T19:00:00+00:00",
     "venue": "Bataclan",
-    "image": "https://cdn-images.dzcdn.net/images/artist/420bd789cacec4d562f981f6eae6c76e/1000x1000-000000-80-0-0.jpg",
-    "link": "https://billetterie.bataclan.fr/fr/product/998/bataclan/duman"
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-10/1080x1080_0.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/824/duman"
   },
   {
     "id": "bataclan-787",
