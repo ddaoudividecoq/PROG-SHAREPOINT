@@ -1996,6 +1996,14 @@
     "link": "https://billetterie.bataclan.fr/fr/manifestation/817/orbital"
   },
   {
+    "id": "accorarena-2733",
+    "title": "RICKY GERVAIS",
+    "date": "2027-04-30T19:30:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/99f80bae-1217-472f-9cab-c5cc83600a24.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
     "id": "accorarena-2571",
     "title": "LA MANO 1.9",
     "date": "2027-05-07T20:00:00.000Z",
@@ -2113,6 +2121,14 @@
     "date": "2027-06-27T18:00:00.000Z",
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/48ca646c-8c40-4ea5-8fe2-88cd57c700b9.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "accorarena-2741",
+    "title": "TOTO",
+    "date": "2027-07-08T19:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/126cca8f-ba38-4008-a825-f3da91f51a57.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
