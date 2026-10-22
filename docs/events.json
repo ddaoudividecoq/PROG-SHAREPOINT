@@ -1724,6 +1724,14 @@
     "link": "https://billetterie.bataclan.fr/fr/manifestation/811/hot_chip"
   },
   {
+    "id": "bataclan-827",
+    "title": "THE GAME",
+    "date": "2027-03-05T19:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://cdn-images.dzcdn.net/images/artist/09f8430d706f859758cb59424dbda3b4/1000x1000-000000-80-0-0.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/meeting/911/the_game"
+  },
+  {
     "id": "adidasarena-2362",
     "title": "MARINE LEONARDI",
     "date": "2027-03-05T20:00:00.000Z",
