@@ -1108,6 +1108,14 @@
     "link": "https://billetterie.bataclan.fr/fr/manifestation/793/verivery_europe"
   },
   {
+    "id": "adidasarena-2742",
+    "title": "ARES 46",
+    "date": "2026-12-11T19:30:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/41eb245d-f675-4597-b5fd-117beb37e0ba.jpeg",
+    "link": "https://www.adidasarena.com/programmation"
+  },
+  {
     "id": "accorarena-2178",
     "title": "Orelsan",
     "date": "2026-12-11T20:00:00.000Z",
@@ -1580,6 +1588,14 @@
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
+    "id": "bataclan-829",
+    "title": "LEONID & FRIENDS",
+    "date": "2027-02-06T19:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://cdn-images.dzcdn.net/images/artist/af01db75da835d697d6f0074f552d1e7/1000x1000-000000-80-0-0.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/meeting/913/leonid_friends"
+  },
+  {
     "id": "accorarena-2721",
     "title": "PARIS GRAND SLAM 2027",
     "date": "2027-02-07T09:00:00.000Z",
@@ -1724,6 +1740,14 @@
     "link": "https://billetterie.bataclan.fr/fr/manifestation/811/hot_chip"
   },
   {
+    "id": "bataclan-831",
+    "title": "H JEUNECRACK",
+    "date": "2027-03-03T18:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-10/1080x1080_2.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/831/h_jeunecrack"
+  },
+  {
     "id": "bataclan-827",
     "title": "THE GAME",
     "date": "2027-03-05T19:00:00+00:00",
@@ -1860,12 +1884,28 @@
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
+    "id": "adidasarena-2734",
+    "title": "Finales de la Coupe de France de Volley",
+    "date": "2027-03-27T15:15:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/e96f960c-89ca-4c7c-82c6-0312795c9ad5.png",
+    "link": "https://www.adidasarena.com/programmation"
+  },
+  {
     "id": "accorarena-2520",
     "title": "ELGRANDETOTO - SALGOAT WORLD TOUR",
     "date": "2027-03-27T20:00:00.000Z",
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/17b3b9bb-9d85-4db3-92a6-32ef4410537e.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "adidasarena-2735",
+    "title": "Finales de la Coupe de France de Volley",
+    "date": "2027-03-27T20:15:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/e96f960c-89ca-4c7c-82c6-0312795c9ad5.png",
+    "link": "https://www.adidasarena.com/programmation"
   },
   {
     "id": "adidasarena-2109",
@@ -2188,6 +2228,14 @@
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
+    "id": "accorarena-2748",
+    "title": "TEXAS",
+    "date": "2027-11-06T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/76ee90c1-7c39-412f-a7c7-0f6ab2c172de.png",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
     "id": "accorarena-2129",
     "title": "Laura Pausini",
     "date": "2027-11-14T19:00:00.000Z",
@@ -2210,6 +2258,14 @@
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-07/1080x1080_3.jpg",
     "link": "https://billetterie.bataclan.fr/fr/manifestation/790/kanonenfieber"
+  },
+  {
+    "id": "accorarena-2753",
+    "title": "CHARLOTTE CARDIN",
+    "date": "2027-12-04T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/5437b47c-d44d-4fb1-a3b8-96797bc100f8.png",
+    "link": "https://www.accorarena.com/fr/programmation"
   },
   {
     "id": "accorarena-2519",
@@ -2248,7 +2304,7 @@
     "title": "ZARTISTE",
     "date": "2030-01-01T19:00:00+00:00",
     "venue": "Bataclan",
-    "image": "",
+    "image": "https://cdn-images.dzcdn.net/images/artist/9e28935418bb6cfeac072c1a2f086c27/1000x1000-000000-80-0-0.jpg",
     "link": "https://billetterie.bataclan.fr/fr/meeting/169/artiste_yurgang"
   }
 ]
