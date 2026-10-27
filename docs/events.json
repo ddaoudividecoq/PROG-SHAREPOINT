@@ -531,14 +531,6 @@
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
-    "id": "bataclan-730",
-    "title": "EVE",
-    "date": "2026-11-03T19:00:00+00:00",
-    "venue": "Bataclan",
-    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-04/eve-press-1080.jpg",
-    "link": "https://billetterie.bataclan.fr/fr/manifestation/730/eve"
-  },
-  {
     "id": "accorarena-2524",
     "title": "SIDIKI DIABATE",
     "date": "2026-11-04T20:00:00.000Z",
@@ -1742,7 +1734,7 @@
   {
     "id": "bataclan-831",
     "title": "H JEUNECRACK",
-    "date": "2027-03-03T18:00:00+00:00",
+    "date": "2027-03-03T18:30:00+00:00",
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-10/1080x1080_2.jpg",
     "link": "https://billetterie.bataclan.fr/fr/manifestation/831/h_jeunecrack"
@@ -1826,6 +1818,14 @@
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/a1982d45-425b-46b5-b839-cb11b73a0909.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "bataclan-730",
+    "title": "EVE",
+    "date": "2027-03-15T19:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-04/eve-press-1080.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/730/eve"
   },
   {
     "id": "bataclan-721",
