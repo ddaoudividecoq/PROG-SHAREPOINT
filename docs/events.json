@@ -1052,6 +1052,14 @@
     "link": "https://www.adidasarena.com/programmation"
   },
   {
+    "id": "bataclan-835",
+    "title": "WELD ETTALYANI",
+    "date": "2026-12-06T18:30:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-11/1080x1080_1.jpg",
+    "link": "https://billetterie.bataclan.fr/fr/manifestation/835/weld_ettalyani"
+  },
+  {
     "id": "accorarena-2175",
     "title": "ERIC SERRA LIVE",
     "date": "2026-12-06T19:00:00.000Z",
@@ -2052,6 +2060,14 @@
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
+    "id": "accorarena-2781",
+    "title": "TIF",
+    "date": "2027-04-28T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/b6da529e-cc75-43f7-8c5e-6eeb5c6a7706.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
     "id": "accorarena-2496",
     "title": "TIF",
     "date": "2027-04-29T20:00:00.000Z",
@@ -2244,6 +2260,22 @@
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
+    "id": "accorarena-2779",
+    "title": "JAMIROQUAI",
+    "date": "2027-07-09T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/e2517116-de73-4849-b539-2cce9156b981.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "accorarena-2780",
+    "title": "JAMIROQUAI",
+    "date": "2027-07-10T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/e2517116-de73-4849-b539-2cce9156b981.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
     "id": "accorarena-2764",
     "title": "SCORPIONS",
     "date": "2027-07-12T20:00:00.000Z",
@@ -2273,6 +2305,14 @@
     "date": "2027-10-16T20:00:00.000Z",
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/d66726fe-188d-46d9-a94d-282f21729265.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "accorarena-2771",
+    "title": "AIRBOURNE",
+    "date": "2027-10-30T19:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/8ccc3614-2e15-453c-bb57-ba747b387a47.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
@@ -2377,6 +2417,14 @@
     "date": "2028-01-06T20:00:00.000Z",
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/c38345bf-e4f4-40e9-8b40-be34ea710198.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "accorarena-2756",
+    "title": "MC SOLAAR",
+    "date": "2028-02-29T20:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/b3645b4c-e4f6-41c2-b818-02835e4be642.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
