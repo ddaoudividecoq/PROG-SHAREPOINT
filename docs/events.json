@@ -871,7 +871,7 @@
     "title": "CIRQUE DU SOLEIL OVO",
     "date": "2026-11-26T20:00:00.000Z",
     "venue": "adidas arena",
-    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/953f7f35-3884-441a-aff9-9f3ed9dcd95a.jpg",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/c2ef6e77-0c82-424c-bcab-f97d617a8594.jpg",
     "link": "https://www.adidasarena.com/programmation"
   },
   {
@@ -887,7 +887,7 @@
     "title": "CIRQUE DU SOLEIL OVO",
     "date": "2026-11-27T19:00:00.000Z",
     "venue": "adidas arena",
-    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/953f7f35-3884-441a-aff9-9f3ed9dcd95a.jpg",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/c2ef6e77-0c82-424c-bcab-f97d617a8594.jpg",
     "link": "https://www.adidasarena.com/programmation"
   },
   {
@@ -899,11 +899,19 @@
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
+    "id": "adidasarena-2772",
+    "title": "CIRQUE DU SOLEIL OVO",
+    "date": "2026-11-28T11:00:00.000Z",
+    "venue": "adidas arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/c2ef6e77-0c82-424c-bcab-f97d617a8594.jpg",
+    "link": "https://www.adidasarena.com/programmation"
+  },
+  {
     "id": "adidasarena-2432",
     "title": "CIRQUE DU SOLEIL OVO",
     "date": "2026-11-28T15:00:00.000Z",
     "venue": "adidas arena",
-    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/953f7f35-3884-441a-aff9-9f3ed9dcd95a.jpg",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/c2ef6e77-0c82-424c-bcab-f97d617a8594.jpg",
     "link": "https://www.adidasarena.com/programmation"
   },
   {
@@ -919,7 +927,7 @@
     "title": "CIRQUE DU SOLEIL OVO",
     "date": "2026-11-28T19:00:00.000Z",
     "venue": "adidas arena",
-    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/953f7f35-3884-441a-aff9-9f3ed9dcd95a.jpg",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/c2ef6e77-0c82-424c-bcab-f97d617a8594.jpg",
     "link": "https://www.adidasarena.com/programmation"
   },
   {
@@ -935,7 +943,7 @@
     "title": "CIRQUE DU SOLEIL OVO",
     "date": "2026-11-29T13:00:00.000Z",
     "venue": "adidas arena",
-    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/953f7f35-3884-441a-aff9-9f3ed9dcd95a.jpg",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/c2ef6e77-0c82-424c-bcab-f97d617a8594.jpg",
     "link": "https://www.adidasarena.com/programmation"
   },
   {
@@ -1240,6 +1248,14 @@
     "date": "2026-12-28T20:00:00.000Z",
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/3db5aaa2-9641-4f0f-a8bd-130774301792.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "accorarena-2800",
+    "title": "PARIS BASKETBALL vs ÉTOILE ROUGE DE BELGRADE",
+    "date": "2026-12-30T20:45:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/4667c754-4abc-459a-8589-474bb1df96da.png",
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
@@ -1633,6 +1649,14 @@
     "venue": "adidas arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/5bf35f32-1965-4d41-bf3b-8ed95595beab.png",
     "link": "https://www.adidasarena.com/programmation"
+  },
+  {
+    "id": "accorarena-2759",
+    "title": "MEETING DE PARIS INDOOR 2027",
+    "date": "2027-02-14T15:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/b4b98797-b232-451e-95f4-6a79ee3fd06d.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
   },
   {
     "id": "bataclan-814",
@@ -2227,6 +2251,14 @@
     "link": "https://www.adidasarena.com/programmation"
   },
   {
+    "id": "accorarena-2785",
+    "title": "Fall Out Boy",
+    "date": "2027-06-10T19:00:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/82fb1423-274b-4265-9b86-6f4cbb51cc2a.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
     "id": "accorarena-2662",
     "title": "TAME IMPALA",
     "date": "2027-06-12T19:45:00.000Z",
@@ -2352,6 +2384,14 @@
     "date": "2027-11-02T20:00:00.000Z",
     "venue": "Accor Arena",
     "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/f68dfefe-47f0-4bc3-8aac-2b0829161268.jpg",
+    "link": "https://www.accorarena.com/fr/programmation"
+  },
+  {
+    "id": "accorarena-2789",
+    "title": "POWERWOLF",
+    "date": "2027-11-05T18:30:00.000Z",
+    "venue": "Accor Arena",
+    "image": "https://www.accorarena.com/uploads/aha/generated/w1920,h1080,fcontain,q85/ac8ce849-6756-4b0c-935c-2a6c70bf0340.jpg",
     "link": "https://www.accorarena.com/fr/programmation"
   },
   {
