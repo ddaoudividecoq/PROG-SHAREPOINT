@@ -68,6 +68,13 @@
     position:absolute;right:10px;top:10px;background:rgba(255,255,255,.92);color:#444;
     font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px
   }
+  /* Concert annule : image attenuee + pastille "Annule" */
+  .cancelled .thumb{filter:grayscale(.55) brightness(.9)}
+  .tag-cancelled{
+    position:absolute;left:10px;top:10px;background:#e8603c;color:#fff;
+    font-size:12.5px;font-weight:700;letter-spacing:.01em;
+    padding:6px 14px;border-radius:999px;box-shadow:0 2px 10px rgba(0,0,0,.28)
+  }
 
   .body{padding:13px 14px 16px;display:flex;flex-direction:column;gap:6px}
   .venue{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted)}
@@ -112,7 +119,7 @@ const VENUE_COLOR = {"Accor Arena":"#b8256f","adidas arena":"#1f8a70","Bataclan"
 const PAST_LINK = {
   "Accor Arena":"https://www.accorarena.com/fr/programmation",
   "adidas arena":"https://www.adidasarena.com/programmation",
-  "Bataclan":"https://www.bataclan.fr/programmation"
+  "Bataclan":"https://www.bataclan.fr/"
 };
 
 let ALL = [];
@@ -158,6 +165,7 @@ function buildGroups(events){
       link: first.link,
       start: first.date,
       end: end,
+      cancelled: run.items.every(it => it.cancelled),
     };
   });
 }
@@ -208,25 +216,28 @@ function render(){
 
   for(const g of list){
     const isPast = new Date(g.end).getTime() < now;
+    const isCancelled = !!g.cancelled;
     const when = fmtWhen(g.start, g.end);
     const a = document.createElement('a');
-    a.className = "card" + (isPast ? " past" : "");
+    a.className = "card" + (isCancelled ? " cancelled" : "") + (isPast ? " past" : "");
     a.href = (isPast && PAST_LINK[g.venue]) ? PAST_LINK[g.venue] : (g.link || "#");
     a.target = "_blank";
     a.rel = "noopener";
 
+    // Annule prime sur Termine
+    const badge = isCancelled ? '<span class="tag-cancelled">Annulé</span>'
+                : (isPast ? '<span class="tag-past">Terminé</span>' : '');
+
     let thumb;
     if(g.image){
       thumb = '<div class="thumb" style="background-image:url(\'' + g.image + '\')">' +
-                '<span class="datechip">' + when + '</span>' +
-                (isPast ? '<span class="tag-past">Terminé</span>' : '') +
+                '<span class="datechip">' + when + '</span>' + badge +
               '</div>';
     } else {
       const c = VENUE_COLOR[g.venue] || "#3a3a48";
       thumb = '<div class="thumb thumb--ph" style="background:linear-gradient(135deg,' + c + ',#20222e)">' +
                 '<span class="ph-title">' + g.title + '</span>' +
-                '<span class="datechip">' + when + '</span>' +
-                (isPast ? '<span class="tag-past">Terminé</span>' : '') +
+                '<span class="datechip">' + when + '</span>' + badge +
               '</div>';
     }
 
