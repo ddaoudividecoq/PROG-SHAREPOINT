@@ -548,6 +548,15 @@
     "cancelled": false
   },
   {
+    "id": "bataclan-842",
+    "title": "KARDES TÜRKÜLER",
+    "date": "2027-03-12T19:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c5/6d/4c/c56d4c96-2c9e-66d6-5014-9569afa34db7/191773695002.jpg/600x600bb.jpg",
+    "link": "https://www.bataclan.fr/evenement/kardes-turkuler_2027-03-12",
+    "cancelled": false
+  },
+  {
     "id": "bataclan-730",
     "title": "EVE",
     "date": "2027-03-15T19:00:00+00:00",
