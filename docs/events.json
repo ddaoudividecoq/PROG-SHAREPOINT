@@ -476,6 +476,15 @@
     "cancelled": false
   },
   {
+    "id": "bataclan-846",
+    "title": "SINIK",
+    "date": "2027-02-05T19:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/3a/e3/c0/3ae3c061-7070-aac7-d853-5ebb1e8bc10e/3700187659158.png/600x600bb.jpg",
+    "link": "https://www.bataclan.fr/evenement/sinik_2027-02-05",
+    "cancelled": false
+  },
+  {
     "id": "bataclan-829",
     "title": "LEONID & FRIENDS",
     "date": "2027-02-06T19:00:00+00:00",
@@ -653,6 +662,15 @@
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-11/1080x1080_2.jpg",
     "link": "https://www.bataclan.fr/evenement/ninajirachi_2027-04-17",
+    "cancelled": false
+  },
+  {
+    "id": "bataclan-845",
+    "title": "DERYCK WHIBLEY",
+    "date": "2027-04-20T17:30:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-11/1080x1080_4.jpg",
+    "link": "https://www.bataclan.fr/evenement/deryck-whibley_2027-04-20",
     "cancelled": false
   },
   {
