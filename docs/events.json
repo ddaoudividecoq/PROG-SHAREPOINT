@@ -658,11 +658,12 @@
   {
     "id": "bataclan-822",
     "title": "NINAJIRACHI",
-    "date": "2027-04-17T17:30:00+00:00",
+    "date": "2027-04-16T17:30:00+00:00",
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-11/1080x1080_2.jpg",
-    "link": "https://www.bataclan.fr/evenement/ninajirachi_2027-04-17",
-    "cancelled": false
+    "link": "https://www.bataclan.fr/evenement/ninajirachi_2027-04-16",
+    "cancelled": false,
+    "dateEnd": "2027-04-17T17:30:00+00:00"
   },
   {
     "id": "bataclan-845",
@@ -707,6 +708,15 @@
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-01/ezhel_1080_0.jpg",
     "link": "https://www.bataclan.fr/evenement/ezhel_2027-05-28",
+    "cancelled": false
+  },
+  {
+    "id": "bataclan-848",
+    "title": "THE WAILERS",
+    "date": "2027-06-08T18:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3c/c2/0d/3cc20dcc-8f4e-f060-36dd-7de52a7ec8fe/12UMGIM14712.rgb.jpg/600x600bb.jpg",
+    "link": "https://www.bataclan.fr/evenement/the-wailers_2027-06-08",
     "cancelled": false
   },
   {
