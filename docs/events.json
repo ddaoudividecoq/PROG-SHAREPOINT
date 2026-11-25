@@ -476,6 +476,15 @@
     "cancelled": false
   },
   {
+    "id": "bataclan-859",
+    "title": "RICHIE CAMPBELL",
+    "date": "2027-02-04T19:00:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-11/rc_1080x1080.jpg",
+    "link": "https://www.bataclan.fr/evenement/richie-campbell_2027-02-04",
+    "cancelled": false
+  },
+  {
     "id": "bataclan-846",
     "title": "SINIK",
     "date": "2027-02-05T19:00:00+00:00",
@@ -724,7 +733,7 @@
     "title": "KARNIVOOL",
     "date": "2027-09-27T18:00:00+00:00",
     "venue": "Bataclan",
-    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-11/1080x1080-noir.jpg",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-11/1080x1080_9.jpg",
     "link": "https://www.bataclan.fr/evenement/karnivool_2027-09-27",
     "cancelled": false
   },
