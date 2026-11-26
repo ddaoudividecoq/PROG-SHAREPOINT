@@ -296,15 +296,6 @@
     "cancelled": false
   },
   {
-    "id": "bataclan-653",
-    "title": "MAMMOTH",
-    "date": "2026-11-26T18:30:00+00:00",
-    "venue": "Bataclan",
-    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-01/mammoth_1080.jpg",
-    "link": "https://www.bataclan.fr/evenement/mammoth_2026-11-26",
-    "cancelled": false
-  },
-  {
     "id": "bataclan-743",
     "title": "PARIS PALOMA",
     "date": "2026-11-27T19:00:00+00:00",
@@ -392,6 +383,15 @@
     "venue": "Bataclan",
     "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-05/photo-green-lung-1080x1080.jpg",
     "link": "https://www.bataclan.fr/evenement/green-lung_2026-12-14",
+    "cancelled": false
+  },
+  {
+    "id": "bataclan-653",
+    "title": "MAMMOTH",
+    "date": "2026-12-18T18:30:00+00:00",
+    "venue": "Bataclan",
+    "image": "https://billetterie.bataclan.fr/sites/hubber_site_bataclan8/files/2026-01/mammoth_1080.jpg",
+    "link": "https://www.bataclan.fr/evenement/mammoth_2026-12-18",
     "cancelled": false
   },
   {
